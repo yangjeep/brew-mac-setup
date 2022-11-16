@@ -1,13 +1,52 @@
 #!/bin/bash
 
-brewCasks="brave-browser 1password iterm2 slack expressvpn 
-           visual-studio-code steam vlc qbittorrent zoom 
-           goland ngrok docker dbeaver-community"
+brewCasks="
+           1password 
+           adobe-acrobat-reader 
+           asana 
+           bartender 
+           dbeaver-community 
+           docker 
+           discord 
+           drawio 
+           firefox 
+           gather 
+           google-chrome 
+           iterm2 
+           istats-menu 
+           iina 
+           lens 
+           monitorcontrol 
+           ngrok 
+           obsidian 
+           slack 
+           steam 
+           sogouinput
+           tor-browser 
+           visual-studio-code 
+           warp 
+           xmind 
+           zoom" 
 
-brews="go git bat zsh z vim wget curl htop pipenv gcc tree 
-       jq postgresql coreutils r rsync tmux maven watch 
-       gdrive goreleaser pandoc rename hub sqlite 
-       mysql-client openjdk@8"
+brews="cmake 
+       cscope 
+       fish 
+       gcc 
+       gdbm 
+       git 
+       go 
+       golangci-lint 
+       kubernets-cli 
+       minikube 
+       node 
+       python3 
+       sqlite 
+       staticcheck 
+       thefuck 
+       tmux 
+       vim 
+       wget 
+       zsh"
 
 npmGlobals="vercel http-server npm-check-updates"
 
@@ -27,6 +66,7 @@ main() {
        setupNpmGlobals $npmGlobals
        setupGo
        setupOhMyZsh
+       setupRC
        echo "complete"
 }
 
@@ -40,7 +80,7 @@ containsElement() {
 setupOhMyZsh() {
        # # Oh My Zsh
        echo -n "installing oh my zsh... "
-       if [ ! -d "/Users/will/.oh-my-zsh" ]; then
+       if [ ! -d "$HOME/.oh-my-zsh" ]; then
               echo -n " downloading... "
               
               output=$(sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended 2>&1)
@@ -192,6 +232,23 @@ setupBrewCasks() {
               fi
               echo "done"
        done
+}
+setupRC() {
+    echo "--- Check vim installation ---"
+    
+    # Install vim-plug
+    echo "Downloading vim-plug"
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+    echo "Cloning dotfile repo"
+    git clone git@github.com:yangjeep/dotfiles.git ~/.dotfiles
+
+    echo "Creating Symbolic Link"
+    ln -s ~/.dotfiles/vimrc ~/.vimrc
+    ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
+
+    echo "Done"
 }
 
 main
