@@ -66,7 +66,7 @@ main() {
        setupNpmGlobals $npmGlobals
        setupGo
        setupOhMyZsh
-       setupVimRC
+       setupRC
        echo "complete"
 }
 
@@ -233,7 +233,7 @@ setupBrewCasks() {
               echo "done"
        done
 }
-setupVimRC() {
+setupRC() {
     echo "--- Check vim installation ---"
     
     # Install vim-plug
@@ -246,6 +246,7 @@ setupVimRC() {
 
     echo "Creating Symbolic Link"
     ln -s ~/.dotfiles/vimrc ~/.vimrc
+    ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
 
     echo "Done"
 }
