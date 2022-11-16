@@ -1,15 +1,57 @@
 #!/bin/bash
 
-brewCasks="brave-browser 1password iterm2 slack expressvpn 
-           visual-studio-code steam vlc qbittorrent zoom 
-           goland ngrok docker dbeaver-community warp istats-menu 
-           bartender adobe-acrobat-reader google-chrome iina 
-           monitorcontrol xmind discord"
+brewCasks="
+           1password 
+           adobe-acrobat-reader 
+           asana 
+           bartender 
+           brave-browser 
+           dbeaver-community 
+           docker 
+           discord 
+           drawio 
+           expressvpn 
+           firefox 
+           gather 
+           goland 
+           google-chrome 
+           iterm2 
+           istats-menu 
+           iina 
+           lens 
+           monitorcontrol 
+           ngrok 
+           qbittorrent 
+           obsidian 
+           slack 
+           steam 
+           sogouinput
+           tor-browser 
+           visual-studio-code 
+           vlc 
+           warp 
+           xmind 
+           zoom" 
 
-brews="go git bat zsh z vim wget curl htop pipenv gcc tree 
-       jq postgresql coreutils r rsync tmux maven watch 
-       gdrive goreleaser pandoc rename hub sqlite 
-       mysql-client openjdk@8 python thefuck vim"
+brews="cmake 
+       cscope 
+       fish 
+       gcc 
+       gdbm 
+       git 
+       go 
+       golangci-lint 
+       kubernets-cli 
+       minikube 
+       node 
+       python3 
+       sqlite 
+       staticcheck 
+       thefuck 
+       tmux 
+       vim 
+       wget 
+       zsh"
 
 npmGlobals="vercel http-server npm-check-updates"
 
