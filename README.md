@@ -7,7 +7,7 @@ Uses mostly brew.  You should be able to run this straight from a brand new mac 
 ## Run it
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/codeallthethingz/brew-mac-setup/master/setup.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/yangjeep/brew-mac-setup/master/setup.sh)"
 ```
 
 ## Modify it
