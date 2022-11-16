@@ -5,15 +5,12 @@ brewCasks="
            adobe-acrobat-reader 
            asana 
            bartender 
-           brave-browser 
            dbeaver-community 
            docker 
            discord 
            drawio 
-           expressvpn 
            firefox 
            gather 
-           goland 
            google-chrome 
            iterm2 
            istats-menu 
@@ -21,14 +18,12 @@ brewCasks="
            lens 
            monitorcontrol 
            ngrok 
-           qbittorrent 
            obsidian 
            slack 
            steam 
            sogouinput
            tor-browser 
            visual-studio-code 
-           vlc 
            warp 
            xmind 
            zoom" 
@@ -71,6 +66,7 @@ main() {
        setupNpmGlobals $npmGlobals
        setupGo
        setupOhMyZsh
+       setupVimRC
        echo "complete"
 }
 
@@ -236,6 +232,22 @@ setupBrewCasks() {
               fi
               echo "done"
        done
+}
+setupVimRC() {
+    echo "--- Check vim installation ---"
+    
+    # Install vim-plug
+    echo "Downloading vim-plug"
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+    echo "Cloning dotfile repo"
+    git clone git@github.com:yangjeep/dotfiles.git ~/.dotfiles
+
+    echo "Creating Symbolic Link"
+    ln -s ~/.dotfiles/vimrc ~/.vimrc
+
+    echo "Done"
 }
 
 main
