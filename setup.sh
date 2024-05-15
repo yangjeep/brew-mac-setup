@@ -20,7 +20,7 @@ sudo -v
 main() {
        setupMacosDefaults
        setupBrew
-       setupBrewCasks $brewCasks
+       # setupBrewCasks $brewCasks
        setupBrews $brews
        setupGit
        setupNvm
