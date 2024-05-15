@@ -1,6 +1,6 @@
 #!/bin/bash
 
-brewCasks="brave-browser 1password iterm2 slack expressvpn 
+brewCasks="1password iterm2 slack expressvpn 
            visual-studio-code steam vlc qbittorrent zoom 
            goland ngrok docker dbeaver-community"
 
