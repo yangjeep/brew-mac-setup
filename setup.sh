@@ -9,7 +9,7 @@ brews="go git bat zsh z vim wget curl htop pipenv gcc tree
        gdrive goreleaser rename hub sqlite 
        mysql-client"
 
-npmGlobals="vercel http-server npm-check-updates"
+npmGlobals="vercel http-server npm-check-updates pnpm"
 
 # don't check home brew for updates
 HOMEBREW_NO_AUTO_UPDATE=1
