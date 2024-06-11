@@ -1,13 +1,13 @@
 #!/bin/bash
 
-brewCasks="1password iterm2 slack expressvpn 
+brewCasks="1password iterm2 slack 
            visual-studio-code steam vlc qbittorrent zoom 
-           goland ngrok docker dbeaver-community"
+           goland docker dbeaver-community"
 
 brews="go git bat zsh z vim wget curl htop pipenv gcc tree 
-       jq postgresql coreutils r rsync tmux maven watch 
-       gdrive goreleaser pandoc rename hub sqlite 
-       mysql-client openjdk@8"
+       jq postgresql coreutils r rsync tmux watch 
+       gdrive goreleaser rename hub sqlite 
+       mysql-client"
 
 npmGlobals="vercel http-server npm-check-updates"
 
