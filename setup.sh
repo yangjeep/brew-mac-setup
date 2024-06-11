@@ -5,7 +5,7 @@ brewCasks="1password iterm2 slack brave-browser
            docker dbeaver-community"
 
 brews="go git bat zsh z vim wget curl htop pipenv gcc tree 
-       jq postgresql coreutils r rsync tmux watch 
+       jq postgresql@14 coreutils r rsync tmux watch 
        gdrive goreleaser rename hub sqlite 
        mysql-client"
 
