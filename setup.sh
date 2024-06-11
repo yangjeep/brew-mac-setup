@@ -7,9 +7,9 @@ brewCasks="1password iterm2 slack brave-browser
 brews="go git bat zsh z vim wget curl htop pipenv gcc tree 
        jq postgresql@14 coreutils r rsync tmux watch 
        gdrive goreleaser rename hub sqlite 
-       mysql-client"
+       mysql-client fswatch"
 
-npmGlobals="vercel http-server npm-check-updates pnpm fswatch"
+npmGlobals="vercel http-server npm-check-updates pnpm"
 
 # don't check home brew for updates
 HOMEBREW_NO_AUTO_UPDATE=1
