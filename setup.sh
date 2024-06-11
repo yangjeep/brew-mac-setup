@@ -157,7 +157,6 @@ setupBrew() {
               echo >&2 "Installing Homebrew Now"
               /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
        }
-       brew tap homebrew/cask-drivers
        echo "done"
 }
 
