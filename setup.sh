@@ -2,7 +2,7 @@
 
 brewCasks="1password iterm2 slack brave-browser
            visual-studio-code steam vlc qbittorrent zoom 
-           docker dbeaver-community"
+           docker dbeaver-community surfshark"
 
 brews="go git bat zsh z vim wget curl htop pipenv gcc tree 
        jq postgresql@14 coreutils r rsync tmux watch 
