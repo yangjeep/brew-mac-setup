@@ -1,52 +1,102 @@
 #!/bin/bash
 
-brewCasks="
-           1password 
-           adobe-acrobat-reader 
-           asana 
-           bartender 
-           dbeaver-community 
-           docker 
-           discord 
-           drawio 
-           firefox 
-           gather 
-           google-chrome 
-           iterm2 
-           istats-menu 
-           iina 
-           lens 
-           monitorcontrol 
-           ngrok 
-           obsidian 
-           slack 
-           steam 
-           sogouinput
-           tor-browser 
-           visual-studio-code 
-           warp 
-           xmind 
-           zoom" 
 
-brews="cmake 
-       cscope 
-       fish 
-       gcc 
-       gdbm 
-       git 
-       go 
-       golangci-lint 
-       kubernets-cli 
-       minikube 
-       node 
-       python3 
-       sqlite 
-       staticcheck 
-       thefuck 
-       tmux 
-       vim 
-       wget 
-       zsh"
+# Define the casks to be installed
+brewCasks="
+1password
+1password-cli
+adobe-creative-cloud
+aldente
+arc
+asana
+bartender
+cork
+dbeaver-community
+ddpm
+devtoys
+discord
+docker
+drawio
+firefox
+gather
+google-chrome
+google-cloud-sdk
+iina
+istat-menus
+iterm2
+logitech-options
+microsoft-teams
+monitorcontrol
+notion
+nx-tether
+obs
+obsidian
+openlens
+postman
+raycast
+slack
+sogouinput
+steam
+synology-drive
+tor-browser
+visual-studio-code
+vnc-viewer
+warp
+webex
+xquartz
+zap
+zoom
+"
+
+# Define the formulae to be installed
+brews="
+autoconf
+automake
+awscli
+brotli
+c-ares
+cmake
+cscope
+databricks
+freetype
+gdbm
+gettext
+giflib
+git
+git-lfs
+gnupg
+go
+golangci-lint
+iperf3
+jq
+kubernetes-cli
+lcov
+llvm
+lua
+minikube
+mysql
+node
+openjdk
+openssl@3
+python
+readline
+redis
+ruby
+ruby-install
+sqlite
+staticcheck
+thefuck
+tmux
+tree
+vim
+wget
+xorgproto
+xz
+yq
+zlib
+zstd
+"
+
 
 npmGlobals="vercel http-server npm-check-updates"
 
